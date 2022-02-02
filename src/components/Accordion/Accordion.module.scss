@@ -1,0 +1,50 @@
+.arrow {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.arrowActive {
+  transform: rotate(270deg);
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  min-width: 325px;
+  padding: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  font-family: monospace;
+  font-size: 18px;
+  margin: 0 auto;
+  background: whitesmoke;
+  transition: all 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.card {
+  max-width: 450px;
+  min-width: 325px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(233, 232, 232);
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 3px;
+  transition: all 0.5s;
+}
+
+.cardActive {
+  height: auto;
+  overflow: visible;
+  padding: 20px 0;
+}
+
+.content {
+  margin: 0;
+  padding: 5px;
+}
