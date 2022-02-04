@@ -15,9 +15,9 @@ const StyledTextField = styled(TextField, { name: "StyledTextField" })(
   })
 );
 
-export const SearchField = ({ value, onChange }) => (
+export const SearchField = ({ value, onChange, placeholder }) => (
   <StyledTextField
-    placeholder="Search..."
+    placeholder={placeholder}
     color="secondary"
     value={value}
     onChange={onChange}

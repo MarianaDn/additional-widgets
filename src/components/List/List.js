@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { SearchCard } from "./components/SearchCard";
-import { SearchField } from "./components/SearchField";
+import { SearchField } from "../common/SearchField";
 import { Box, styled } from "@mui/material";
 import axios from "axios";
 
@@ -42,7 +42,11 @@ export const List = () => {
 
   return (
     <>
-      <SearchField value={value} onChange={handleChange} />
+      <SearchField
+        value={value}
+        onChange={handleChange}
+        placeholder="Search..."
+      />
       <StyledBox>
         {result.map(({ pageid, title, snippet }) => (
           <SearchCard

@@ -5,6 +5,8 @@ import { Accordion } from "../Accordion/Accordion";
 import { items } from "../../constants";
 import styles from "../Accordion/Accordion.module.scss";
 import { List } from "../List/List";
+import { Translate } from "../Translate/Translate";
+import { DropdownComponent } from "../Dropdown/Dropdown";
 
 export const ColorTabs = () => {
   const [value, setValue] = useState("Accordion");
@@ -52,8 +54,12 @@ export const ColorTabs = () => {
         <TabPanel value="List">
           <List />
         </TabPanel>
-        <TabPanel value="Dropdown">Dropdowne</TabPanel>
-        <TabPanel value="Translate">Translate</TabPanel>
+        <TabPanel value="Dropdown">
+          <DropdownComponent />
+        </TabPanel>
+        <TabPanel value="Translate">
+          <Translate />
+        </TabPanel>
       </TabContext>
     </Box>
   );
